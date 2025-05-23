@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --blue-950: #242a45;
+  --blue-600: #5267df;
+  --grey-600: #5b6074;
+  --grey-50: #f7f7f7;
+  --red-400: #fa5959;
+}
