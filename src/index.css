@@ -17,7 +17,6 @@ picture {
 }
 
 input,
-button,
 textarea,
 select {
   font: inherit;
@@ -27,9 +26,20 @@ html,
 body {
   height: 100%;
   -webkit-font-smoothing: antialiased;
+  font-family: "Rubik";
 }
 
 #root {
   height: 100%;
   isolation: isolate;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --blue-600: #5267df;
+  --blue-950: #242a45;
+  --grey-50: #f7f7f7;
+  --grey-600: #5b6074;
+  --red: #fa5959;
 }

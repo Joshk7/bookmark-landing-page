@@ -1,5 +1,5 @@
-import bookmark from "../assets/logo-bookmark.svg";
-import hamburger from "../assets/icon-hamburger.svg";
+import bookmark from "/src/assets/logo-bookmark.svg";
+import hamburger from "/src/assets/icon-hamburger.svg";
 
 const Navbar = () => {
   return (
