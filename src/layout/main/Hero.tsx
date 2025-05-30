@@ -14,7 +14,6 @@ const Hero = () => {
           A clean and simple interface to organize your favorite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
-
         <div className="px-8 lg:px-0 flex gap-x-4">
           <Button primary>Get it on Chrome</Button>
           <Button secondary>Get it on Firefox</Button>
