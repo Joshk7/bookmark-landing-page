@@ -7,10 +7,10 @@ const Navbar = () => {
       <a href="#Home">
         <img src={bookmark} height={25} alt="Bookmark" />
       </a>
-      <button className="md:hidden">
+      <button className="lg:hidden">
         <img src={hamburger} height={15} alt="" />
       </button>
-      <ul className="hidden md:flex gap-x-12">
+      <ul className="hidden lg:flex gap-x-12">
         <li>
           <a
             className="text-[0.875rem] text-[var(--blue-950)] hover:text-[var(--red)] leading-loose uppercase"

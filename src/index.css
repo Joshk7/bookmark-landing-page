@@ -25,6 +25,7 @@ select {
 html,
 body {
   height: 100%;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
   font-family: "Rubik";
 }
@@ -46,6 +47,7 @@ p {
 
 #root {
   height: 100%;
+  width: 100%;
   isolation: isolate;
 }
 
@@ -57,4 +59,8 @@ p {
   --grey-50: #f7f7f7;
   --grey-600: #5b6074;
   --red: #fa5959;
+}
+
+.me-auto {
+    margin-inline-end: auto;
 }
