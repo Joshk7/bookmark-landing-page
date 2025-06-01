@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@tailwind utilities;
 
 *,
 *::before,
@@ -59,8 +60,4 @@ p {
   --grey-50: #f7f7f7;
   --grey-600: #5b6074;
   --red: #fa5959;
-}
-
-.me-auto {
-    margin-inline-end: auto;
 }
