@@ -1,63 +1,70 @@
-@import "tailwindcss";
-@tailwind utilities;
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+  * {
+    margin: 0;
+  }
 
-* {
-  margin: 0;
-}
+  img,
+  picture {
+    display: block;
+    max-width: 100%;
+  }
 
-img,
-picture {
-  display: block;
-  max-width: 100%;
-}
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
 
-input,
-textarea,
-select {
-  font: inherit;
-}
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Rubik";
+  }
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Rubik";
-}
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
 
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
-}
-
-h1 {
+  h1 {
     font-size: clamp(1.875rem, 0.802rem + 4.58vw, 3rem);
     line-height: clamp(2.5rem, 1.784rem + 3.053vw, 3.25rem);
     font-weight: medium;
     letter-spacing: 0.00625rem;
-}
+  }
 
-p {
+  p {
     text-wrap: pretty;
+  }
+
+  #root {
+    height: 100%;
+    width: 100%;
+    isolation: isolate;
+  }
+
+  :root {
+    --white: #ffffff;
+    --black: #000000;
+    --blue-600: #5267df;
+    --blue-950: #242a45;
+    --grey-50: #f7f7f7;
+    --grey-600: #5b6074;
+    --red: #fa5959;
+  }
 }
 
-#root {
-  height: 100%;
-  width: 100%;
-  isolation: isolate;
-}
-
-:root {
-  --white: #ffffff;
-  --black: #000000;
-  --blue-600: #5267df;
-  --blue-950: #242a45;
-  --grey-50: #f7f7f7;
-  --grey-600: #5b6074;
-  --red: #fa5959;
-}
+@import "tailwindcss";

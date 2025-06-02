@@ -5,14 +5,14 @@ import twitter from "/src/assets/icon-twitter.svg";
 const Footer = () => {
     return (
         <footer className="w-full p-8 bg-[var(--blue-950)]">
-            <div className="!mx-auto max-w-[75%] w-full flex flex-col md:flex-row items-center justify-between gap-y-12">
+            <div className="mx-auto max-w-[75%] w-full flex flex-col md:flex-row items-center justify-between gap-y-12">
                 <img
                     className="max-h-[25px]"
                     src={bookmarkWhite}
                     height={25}
                     alt="Bookmark"
                 />
-                <ul className="flex flex-col md:flex-row items-center gap-y-6 gap-x-6 lg:!mr-auto lg:!ml-16">
+                <ul className="flex flex-col md:flex-row items-center gap-y-6 gap-x-6 lg:mr-auto lg:ml-16">
                     <li>
                         <a
                             className="text-[0.9375rem] leading-[1.0625rem] tracking-[0.108125rem] text-[var(--white)] uppercase"
