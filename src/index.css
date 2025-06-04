@@ -39,13 +39,6 @@
     overflow-wrap: break-word;
   }
 
-  h1 {
-    font-size: clamp(1.875rem, 0.802rem + 4.58vw, 3rem);
-    line-height: clamp(2.5rem, 1.784rem + 3.053vw, 3.25rem);
-    font-weight: medium;
-    letter-spacing: 0.00625rem;
-  }
-
   p {
     text-wrap: pretty;
   }
@@ -64,7 +57,15 @@
     --grey-50: #f7f7f7;
     --grey-600: #5b6074;
     --red: #fa5959;
+    --border: #495DCF33;
   }
+}
+
+h1 {
+  font-size: clamp(1.875rem, 0.802rem + 4.58vw, 3rem);
+  line-height: clamp(2.5rem, 1.784rem + 3.053vw, 3.25rem);
+  font-weight: medium;
+  letter-spacing: 0.00625rem;
 }
 
 @import "tailwindcss";
