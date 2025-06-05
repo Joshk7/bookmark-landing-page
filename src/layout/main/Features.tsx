@@ -23,7 +23,7 @@ const Features = () => {
 
   return (
     <section className="mt-32">
-      <div className="flex flex-col items-center gap-y-4 px-8 pb-8">
+      <div className="flex flex-col items-center gap-y-4 px-8 pb-8 max-w-[540px] mx-auto">
         <h2 className="font-medium text-2xl leading-[220%] ">Features</h2>
         <p className="text-center text-[var(--blue-950)] text-[0.9375rem] opacity-50">
           Our aim is to make it quick and easy for you to access your favourite
@@ -31,7 +31,7 @@ const Features = () => {
           them on the go.
         </p>
       </div>
-      <ul className="px-8 flex flex-col sm:flex-row">
+      <ul className="px-8 flex flex-col sm:flex-row max-w-[608px] lg:max-w-[730px] mx-auto">
         <li className="flex flex-1 justify-center border-b-[0.0625rem] border-[var(--border)] border-t-[0.0625rem] sm:border-t-0">
           <TabSection onPress={handleSimple} active={feature === "simple"}>
             Simple Bookmarking
@@ -49,8 +49,9 @@ const Features = () => {
         </li>
       </ul>
       <div>
-        <div className="px-8 pt-10 pb-9 flex justify-end">
+        <div className="px-8 sm:px-16 pt-10 pb-9 sm:pb-[5.5rem] flex justify-end relative">
           <img src={illustrationOne} alt="" />
+          <div className="absolute z-[-1] bottom-0 left-0 bg-[var(--blue-600)] h-[72.5%] w-[80%] rounded-tr-full rounded-br-full"></div>
         </div>
       </div>
     </section>
