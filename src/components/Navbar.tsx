@@ -7,7 +7,7 @@ const Navbar = () => {
       <a href="#Home">
         <img src={bookmark} height={25} alt="Bookmark" />
       </a>
-      <button className="lg:hidden">
+      <button className="lg:hidden cursor-pointer">
         <img src={hamburger} height={15} alt="" />
       </button>
       <ul className="hidden lg:flex gap-x-12">

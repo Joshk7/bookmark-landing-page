@@ -2,12 +2,25 @@ import { useState } from "react";
 import TabSection from "../../components/TabSection";
 
 import illustrationOne from "/src/assets/illustration-features-tab-1.svg";
+import Button from "../../components/Button";
 
 type Feature = "simple" | "speedy" | "easy";
 
 const Features = () => {
   const [feature, setFeature] = useState<Feature>("simple");
   console.log(feature, setFeature);
+
+  const featureTitles = {
+    simple: "Bookmark in one click",
+    speedy: "Intelligent search",
+    easy: "Share your bookmarks",
+  };
+
+  const featureDescriptions = {
+    simple: `Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.`,
+    speedy: `Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.`,
+    easy: `Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.`,
+  };
 
   const handleSimple = () => {
     setFeature("simple");
@@ -52,6 +65,11 @@ const Features = () => {
         <div className="px-8 sm:px-16 pt-10 pb-9 sm:pb-[5.5rem] flex justify-end relative">
           <img src={illustrationOne} alt="" />
           <div className="absolute z-[-1] bottom-0 left-0 bg-[var(--blue-600)] h-[72.5%] w-[80%] rounded-tr-full rounded-br-full"></div>
+        </div>
+        <div>
+          <h1>{featureTitles[feature]}</h1>
+          <p>{featureDescriptions[feature]}</p>
+          <Button primary>More Info</Button>
         </div>
       </div>
     </section>
