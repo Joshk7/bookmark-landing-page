@@ -37,7 +37,7 @@ const Features = () => {
   return (
     <section className="mt-32">
       <div className="flex flex-col items-center gap-y-4 px-8 pb-8 max-w-[540px] mx-auto">
-        <h2 className="font-medium text-2xl leading-[220%] ">Features</h2>
+        <h2 className="font-medium text-2xl leading-[220%]">Features</h2>
         <p className="text-center text-[var(--blue-950)] text-[0.9375rem] opacity-50">
           Our aim is to make it quick and easy for you to access your favourite
           websites. Your bookmarks sync between your devices so you can access
@@ -61,15 +61,21 @@ const Features = () => {
           </TabSection>
         </li>
       </ul>
-      <div>
-        <div className="px-8 sm:px-16 pt-10 pb-9 sm:pb-[5.5rem] flex justify-end relative">
+      <div className="flex flex-col gap-x-[7.5rem] gap-y-8 sm:gap-y-16 lg:flex-row lg:items-center">
+        <div className="flex-1 px-8 sm:px-16 pt-10 pb-9 sm:pb-[5.5rem] flex justify-end relative">
           <img src={illustrationOne} alt="" />
           <div className="absolute z-[-1] bottom-0 left-0 bg-[var(--blue-600)] h-[72.5%] w-[80%] rounded-tr-full rounded-br-full"></div>
         </div>
-        <div>
-          <h1>{featureTitles[feature]}</h1>
-          <p>{featureDescriptions[feature]}</p>
-          <Button primary>More Info</Button>
+        <div className="flex-1 flex flex-col items-center gap-y-4 px-8 pb-8 lg:p-0">
+          <div className="max-w-[450px] mx-auto lg:ml-0">
+            <h2 className="font-medium text-2xl leading-[220%]">
+              {featureTitles[feature]}
+            </h2>
+            <p className="text-center lg:text-left text-[var(--blue-950)] text-[0.9375rem] opacity-50">
+              {featureDescriptions[feature]}
+            </p>
+            <Button primary>More Info</Button>
+          </div>
         </div>
       </div>
     </section>
