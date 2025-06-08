@@ -1,26 +1,34 @@
 import { useState } from "react";
 import TabSection from "../../components/TabSection";
 
-import illustrationOne from "/src/assets/illustration-features-tab-1.svg";
+import simple from "/src/assets/illustration-features-tab-1.svg";
+import speedy from "/src/assets/illustration-features-tab-2.svg";
+import easy from "/src/assets/illustration-features-tab-3.svg";
 import Button from "../../components/Button";
 
 type Feature = "simple" | "speedy" | "easy";
 
+const featureImages = {
+  simple,
+  speedy,
+  easy,
+};
+
+const featureTitles = {
+  simple: "Bookmark in one click",
+  speedy: "Intelligent search",
+  easy: "Share your bookmarks",
+};
+
+const featureDescriptions = {
+  simple: `Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.`,
+  speedy: `Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.`,
+  easy: `Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.`,
+};
+
 const Features = () => {
   const [feature, setFeature] = useState<Feature>("simple");
   console.log(feature, setFeature);
-
-  const featureTitles = {
-    simple: "Bookmark in one click",
-    speedy: "Intelligent search",
-    easy: "Share your bookmarks",
-  };
-
-  const featureDescriptions = {
-    simple: `Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.`,
-    speedy: `Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.`,
-    easy: `Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.`,
-  };
 
   const handleSimple = () => {
     setFeature("simple");
@@ -63,7 +71,7 @@ const Features = () => {
       </ul>
       <div className="flex flex-col gap-x-[7.5rem] gap-y-8 sm:gap-y-16 lg:flex-row lg:items-center">
         <div className="flex-1 px-8 sm:px-16 pt-10 pb-9 sm:pb-[5.5rem] flex justify-end relative">
-          <img src={illustrationOne} alt="" />
+          <img src={featureImages[feature]} alt="" />
           <div className="absolute z-[-1] bottom-0 left-0 bg-[var(--blue-600)] h-[72.5%] w-[80%] rounded-tr-full rounded-br-full"></div>
         </div>
         <div className="flex-1 flex flex-col items-center gap-y-4 px-8 pb-8 lg:p-0">
