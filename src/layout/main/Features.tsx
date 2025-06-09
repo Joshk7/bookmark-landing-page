@@ -28,7 +28,6 @@ const featureDescriptions = {
 
 const Features = () => {
   const [feature, setFeature] = useState<Feature>("simple");
-  console.log(feature, setFeature);
 
   const handleSimple = () => {
     setFeature("simple");
