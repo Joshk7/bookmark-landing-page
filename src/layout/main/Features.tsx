@@ -69,12 +69,12 @@ const Features = () => {
         </li>
       </ul>
       <div className="flex flex-col gap-x-[7.5rem] gap-y-8 sm:gap-y-16 lg:flex-row lg:items-center">
-        <div className="flex-1 px-8 sm:px-16 pt-10 pb-9 sm:pb-[5.5rem] flex justify-end relative">
+        <div className="flex-1 px-8 sm:px-16 lg:p-10 pt-10 pb-9 sm:pb-[5.5rem] flex justify-end relative">
           <img src={featureImages[feature]} alt="" />
           <div className="absolute z-[-1] bottom-0 left-0 bg-[var(--blue-600)] h-[72.5%] w-[80%] rounded-tr-full rounded-br-full"></div>
         </div>
         <div className="flex-1 flex flex-col items-center gap-y-4 px-8 pb-8 lg:p-0">
-          <div className="max-w-[450px] mx-auto lg:ml-0">
+          <div className="max-w-[450px] mx-auto lg:ml-0 flex flex-col items-center lg:items-start gap-y-4 md:gap-y-6">
             <h2 className="font-medium text-2xl leading-[220%]">
               {featureTitles[feature]}
             </h2>
