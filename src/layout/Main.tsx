@@ -1,3 +1,4 @@
+import Download from "./main/Download";
 import Features from "./main/Features";
 import Hero from "./main/Hero";
 
@@ -6,6 +7,7 @@ const Main = () => {
     <main>
       <Hero />
       <Features />
+      <Download />
     </main>
   );
 };
