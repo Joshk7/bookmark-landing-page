@@ -78,7 +78,7 @@ const Features = () => {
             <h2 className="font-medium text-2xl leading-[220%]">
               {featureTitles[feature]}
             </h2>
-            <p className="text-center lg:text-left text-[var(--blue-950)] text-[0.9375rem] opacity-50">
+            <p className="text-center lg:text-left text-[var(--blue-950)] text-[0.9375rem] sm:text-[1.125rem] leading-[165%] sm:leading-[1.75rem] opacity-50">
               {featureDescriptions[feature]}
             </p>
             <Button primary>More Info</Button>
