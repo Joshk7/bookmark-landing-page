@@ -44,7 +44,9 @@ const Features = () => {
   return (
     <section className="mt-32">
       <div className="flex flex-col items-center gap-y-4 px-8 mb-8 lg:mb-[4.5rem]  max-w-[604px] mx-auto">
-        <h2 className="font-medium text-2xl leading-[220%]">Features</h2>
+        <h2 className="text-center font-medium text-2xl sm:text-[2rem] leading-[3.25rem] tracking-[-0.005rem] sm:tracking-[-0.00625rem]">
+          Features
+        </h2>
         <p className="text-center text-[var(--blue-950)] text-[0.9375rem] sm:text-[1.125rem] leading-[165%] sm:leading-[1.75rem] opacity-50">
           Our aim is to make it quick and easy for you to access your favourite
           websites. Your bookmarks sync between your devices so you can access
@@ -75,7 +77,7 @@ const Features = () => {
         </div>
         <div className="flex-1 flex flex-col items-center gap-y-4 px-8 pb-8 lg:p-0">
           <div className="max-w-[450px] mx-auto lg:ml-0 flex flex-col items-center lg:items-start gap-y-4 md:gap-y-6">
-            <h2 className="font-medium text-2xl leading-[220%]">
+            <h2 className="text-center font-medium text-2xl sm:text-[2rem] leading-[3.25rem] tracking-[-0.005rem] sm:tracking-[-0.00625rem]">
               {featureTitles[feature]}
             </h2>
             <p className="text-center lg:text-left text-[var(--blue-950)] text-[0.9375rem] sm:text-[1.125rem] leading-[165%] sm:leading-[1.75rem] opacity-50">
