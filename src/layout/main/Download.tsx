@@ -19,17 +19,17 @@ const Download = () => {
             <Button className="mx-auto" primary>Add & Install Extension</Button>
         </li>
         <li className="mx-auto flex flex-col">
-            <img className="mx-auto" src="/src/assets/logo-firefox.svg" alt="" />
-            <h2 className="text-center">Add to Firefox</h2>
-            <p className="text-center">Minimum version 55</p>
-            <img src="/src/assets/bg-dots.svg" alt="" />
+            <img className="mx-auto mb-8" src="/src/assets/logo-firefox.svg" alt="" />
+            <h2 className="text-center mb-2">Add to Firefox</h2>
+            <p className="text-center mb-6">Minimum version 55</p>
+            <img className="mb-6" src="/src/assets/bg-dots.svg" alt="" />
             <Button className="mx-auto" primary>Add & Install Extension</Button>
         </li>
         <li className="mx-auto flex flex-col">
-            <img className="mx-auto" src="/src/assets/logo-opera.svg" alt="" />
-            <h2 className="text-center">Add to Opera</h2>
-            <p className="text-center">Minimum version 46</p>
-            <img className="mx-auto" src="/src/assets/bg-dots.svg" alt="" />
+            <img className="mx-auto mb-8" src="/src/assets/logo-opera.svg" alt="" />
+            <h2 className="text-center mb-2">Add to Opera</h2>
+            <p className="text-center mb-6">Minimum version 46</p>
+            <img className="mb-6" src="/src/assets/bg-dots.svg" alt="" />
             <Button className="mx-auto" primary>Add & Install Extension</Button>
         </li>
       </ul>
