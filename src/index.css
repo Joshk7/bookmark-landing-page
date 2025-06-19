@@ -68,4 +68,8 @@ h1 {
   letter-spacing: 0.00625rem;
 }
 
+.card-shadow {
+    box-shadow: 0px 10px 20px -5px rgba(73,93,207,0.12);
+}
+
 @import "tailwindcss";

@@ -13,7 +13,7 @@ const Download = () => {
         </p>
       </div>
       <ul className="mx-auto flex flex-wrap pt-10 px-4 gap-y-10 gap-x-2">
-        <li className="mx-auto flex flex-col">
+        <li className="mx-auto flex flex-col card-shadow">
           <img
             className="mx-auto mb-8"
             src="/src/assets/logo-chrome.svg"
@@ -30,7 +30,7 @@ const Download = () => {
             Add & Install Extension
           </Button>
         </li>
-        <li className="mx-auto flex flex-col">
+        <li className="mx-auto flex flex-col card-shadow">
           <img
             className="mx-auto mb-8"
             src="/src/assets/logo-firefox.svg"
@@ -47,7 +47,7 @@ const Download = () => {
             Add & Install Extension
           </Button>
         </li>
-        <li className="mx-auto flex flex-col">
+        <li className="mx-auto flex flex-col card-shadow">
           <img
             className="mx-auto mb-8"
             src="/src/assets/logo-opera.svg"
