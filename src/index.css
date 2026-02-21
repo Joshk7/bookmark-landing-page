@@ -1,75 +1,72 @@
-@layer reset {
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-
-  * {
-    margin: 0;
-  }
-
-  img,
-  picture {
-    display: block;
-    max-width: 100%;
-  }
-
-  input,
-  textarea,
-  select {
-    font: inherit;
-  }
-
-  html,
-  body {
-    height: 100%;
-    width: 100%;
-    -webkit-font-smoothing: antialiased;
-    font-family: "Rubik";
-  }
-
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    overflow-wrap: break-word;
-  }
-
-  p {
-    text-wrap: pretty;
-  }
-
-  #root {
-    height: 100%;
-    width: 100%;
-    isolation: isolate;
-  }
-
-  :root {
-    --white: #ffffff;
-    --black: #000000;
-    --blue-600: #5267df;
-    --blue-950: #242a45;
-    --grey-50: #f7f7f7;
-    --grey-600: #5b6074;
-    --red: #fa5959;
-    --border: #495DCF33;
-  }
-}
-
-h1 {
-  font-size: clamp(1.875rem, 0.802rem + 4.58vw, 3rem);
-  line-height: clamp(2.5rem, 1.784rem + 3.053vw, 3.25rem);
-  font-weight: medium;
-  letter-spacing: 0.00625rem;
-}
-
-.card-shadow {
-    box-shadow: 0px 10px 20px -5px rgba(73,93,207,0.12);
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import "tailwindcss";
+
+body {
+  font-family: "Rubik", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply text-slate-800 font-bold;
+}
+
+p {
+  @apply text-slate-600;
+  line-height: 1.8;
+}
+
+button {
+  @apply text-slate-600;
+}
+
+.btn-blue {
+  background-color: hsl(231, 69%, 60%);
+  @apply text-white;
+}
+
+.bg {
+  position: absolute;
+  right: -32px;
+  bottom: 0;
+  height: 250px;
+  width: 100%;
+  background-color: hsl(231, 69%, 60%);
+  border-radius: 200px 0 0 200px;
+  z-index: -1;
+}
+
+.bg-left {
+  position: absolute;
+  left: -32px;
+  bottom: -50px;
+  height: 250px;
+  width: 100%;
+  background-color: hsl(231, 69%, 60%);
+  border-radius: 0 200px 200px 0;
+  z-index: -1;
+}
+
+@media (min-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .bg,
+  .bg-left {
+    height: 300px;
+  }
+
+  .bg {
+    right: -60%;
+    width: 120%;
+  }
+
+  .bg-left {
+    left: -60%;
+    width: 120%;
+  }
+}
