@@ -28,7 +28,7 @@ export default function Showcase() {
         </article>
         <article className="relative">
           <img src={hero} alt="" className="w-full" />
-          
+
           <div className="bg"></div>
         </article>
       </section>

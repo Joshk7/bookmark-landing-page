@@ -7,24 +7,51 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
+nav {
+  @apply flex justify-between flex-col opacity-0 absolute -z-50 lg:opacity-100 lg:relative lg:z-auto;
+}
+
+nav.open {
+  background-color: hsl(229, 31%, 21%, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  padding: 32px;
+  opacity: 1;
+}
+
+/* nav ul li button {
+  color: #fff;
+  font-size: 16px;
+} */
+
+/* h1,
 h2,
 h3,
 h4 {
-  @apply text-slate-800 font-bold;
-}
+  color: #1d293d;
+  font: bold;
+} */
 
 p {
   @apply text-slate-600;
   line-height: 1.8;
 }
 
-button {
+/* button {
   @apply text-slate-600;
-}
+} */
 
 .btn-blue {
   background-color: hsl(231, 69%, 60%);
+  @apply text-white;
+}
+
+.btn-red {
+  background-color: hsl(0, 94%, 66%);
   @apply text-white;
 }
 
@@ -50,9 +77,28 @@ button {
   z-index: -1;
 }
 
+.attribution {
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+.attribution a {
+  color: hsl(228, 68%, 62%);
+  text-decoration: underline;
+  font-size: 14px;
+}
+
 @media (min-width: 1024px) {
   body {
     overflow-x: hidden;
+  }
+
+  nav.open {
+    background-color: transparent;
+    position: relative;
+    z-index: auto;
+    padding: 0;
   }
 
   .bg,
